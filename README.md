@@ -1,4 +1,4 @@
-# django-recipes
+# django_recipes
 Various Django patterns mostly based on class based views
 
 Each 'recipe' is contained in a single application under the project django_recipes
