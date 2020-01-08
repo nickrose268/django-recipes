@@ -1,0 +1,5 @@
+db.sqlite3
+django_recipes/__pycache__
+django_recipes/settings.py
+campaign/__pycache__
+campaign/migrations
