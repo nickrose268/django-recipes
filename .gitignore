@@ -3,3 +3,5 @@ django_recipes/__pycache__
 django_recipes/settings.py
 campaign/__pycache__
 campaign/migrations
+contact/__pycache__
+contact/migrations

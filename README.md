@@ -19,12 +19,21 @@ In views.py three classes are created
   CampaignDisplayView(DetailView) - handling the campaign detail
   CampaignSignupView(FormView, SingleObjectMixin) - handling the signup form
   CampaignDetailView(View) - combining the above to into a single multipurpose view
-  
+
 The underlying models are Campaign and Subscriber, the signup form is underlain by a ModelForm called
 SubscriberSignupForm.
-  
+
 The trick is to override form_valid in the CampaignSignupView in order to pass the campaign pk to the
 SubscriberSignupForm's save method.
 
-In real-life the signup form should only activate after the user has consented and read a privacy policy. In addition any emails and names 
+In real-life the signup form should only activate after the user has consented and read a privacy policy. In addition any emails and names
 should be stored in encrypted form.
+
+**_1) Contact_**
+
+A simple contact form based on CreateView.
+
+The main customised functionality is in the form class ContactForm where
+init, clean and save are overridden for various reasons.
+
+init is overridden because we want to insert a 'autfocus' into the form fields.
